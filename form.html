@@ -1,0 +1,63 @@
+<html>
+<head>
+<style>
+ .shbt {
+ background:green !important;
+ transition-duration: .5s;
+ padding:15px 30px;
+ border-radius: 50px
+ }
+ .shbt:hover {
+ background:white !important;
+ color: green !important;
+ text-decoration: none;
+ }
+ .shbt:focus {
+ text-decoration: none;
+ }
+     #fanem{color:black;}
+ #fname
+ { background-color: white;}
+ 
+ #sechide {
+ display:non;
+ }
+ .secshow {
+ display:block !important;
+ }
+</style>
+</head>
+<body>
+<form id="form1"> <label for="fname" id="fanem">Zip Code:</label>
+  <input type="text" id="fname" name="fname">
+   <input type="submit" value="Get Quote!" class="shbt" >
+</form>
+
+
+<script>
+
+window.onload=function(){
+var form = document.getElementById('form1');
+ 
+    form.addEventListener('submit',function(e){
+ 
+        e.preventDefault()
+ 
+ 
+ 
+        var username = document.getElementById('fname').value;
+ alert(username);
+ 
+         
+
+      var element = document.getElementById("sechide");
+ element.classList.toggle("secshow");
+var element = document.querySelector("#sechide");
+// smooth scroll to element and align it at the bottom
+element.scrollIntoView({ behavior: 'smooth', block: 'end'});
+        
+    })
+}
+</script>
+</body>
+</html>
